@@ -1,0 +1,472 @@
+<!----- header Section ------->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kamanchar - Professional Photography Services in Balochistan">
+    <title>Kamanchar_Professional_Photography</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!-- ═══════════════════════════════════════════════════
+         PREMIUM TYPOGRAPHY — 3-font photography stack
+         ▸ Cinzel          → Brand logo / navbar title
+         ▸ Cormorant Garamond → All headings (h1–h3)
+         ▸ DM Sans         → Body, nav links, forms, buttons
+         ═══════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="Kamanchar_css/style.css">
+    <link rel="stylesheet" href="Kamanchar_css/gallery.css">
+    <link rel="stylesheet" href="Kamanchar_css/about.css">
+    <link rel="stylesheet" href="Kamanchar_css/services.css">
+    <link rel="stylesheet" href="Kamanchar_css/contact.css">
+    <!-- Font assignments (must come LAST to override defaults) -->
+    <link rel="stylesheet" href="Kamanchar_css/fonts.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html"><img src="images/logo1.png" alt="Kamanchar Logo"></a>
+                <h1>K<span>amanchar</span></h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul class="navbar-nav">
+                    <li><a href="index.html"    class="nav-link" data-page="index">Home</a></li>
+                    <li><a href="Gallery.html"  class="nav-link" data-page="gallery">Gallery</a></li>
+                    <li><a href="Services.html" class="nav-link" data-page="services">Services</a></li>
+                    <li><a href="About.html" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="Contact.html"  class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-social">
+			 <a href="https://wa.me/923301561289?text=Hi!%20I%20was%20just%20exploring%20the%20Kamanchar%20collection%20and%20I%E2%80%99m%20really%20impressed%20with%20the%20quality%20and%20style.%20I%E2%80%99d%20love%20to%20get%20some%20details%20and%20place%20an%20order!%20%E2%9C%A8" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+                <a href="https://www.youtube.com/@kamancharbaloch2745" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/kamancharbaluch"    target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/kamanchar.baloch"        target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </nav>
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- ═══════════════════════════════════════
+         HERO SLIDER SECTION
+    ═══════════════════════════════════════ -->
+    <section class="hero-slider-section" id="home">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide" style="background-image: url('images/slide1.jpg')">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-tag">Life & Stories</span>
+                            <h2>Pure & Unfiltered Joy</h2>
+                            <p>Candid moments from the heart of Balochistan — real people, real smiles</p>
+                            <a href="Gallery.html" class="slide-btn">Explore Gallery <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide" style="background-image: url('images/slide2.jpg')">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-tag">Baloch Heritage</span>
+                            <h2>Threads of Tradition</h2>
+                            <p>The tools that built a culture — raw, rugged, and rooted in the soil of Balochistan</p>
+                            <a href="Gallery.html" class="slide-btn">View Portraits <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 — Desert person with arms raised -->
+<div class="swiper-slide" style="background-image: url('images/slide3.jpg')">
+    <div class="slide-overlay">
+        <div class="slide-content">
+            <span class="slide-tag">Desert & Landscape</span>
+            <h2>Spirit of the Desert</h2>
+            <p>A lone soul embracing the vast, untamed wilderness of Balochistan</p>
+            <a href="Gallery.html" class="slide-btn">See More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4 — Butterfly on flowers + brick wall -->
+<div class="swiper-slide" style="background-image: url('images/slide4.jpg')">
+    <div class="slide-overlay">
+        <div class="slide-content">
+            <span class="slide-tag">Nature & Texture</span>
+            <h2>Beauty in Every Detail</h2>
+            <p>From delicate butterflies to ancient walls — nature's quiet art in Balochistan</p>
+            <a href="Gallery.html" class="slide-btn">View Gallery <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 5 — Close-up of woman's eyes with hijab -->
+<div class="swiper-slide" style="background-image: url('images/slide5.png')">
+    <div class="slide-overlay">
+        <div class="slide-content">
+            <span class="slide-tag">Portrait</span>
+            <h2>Eyes That Speak</h2>
+            <p>The depth and quiet dignity of Baloch women — captured in a single gaze</p>
+            <a href="Gallery.html" class="slide-btn">Discover More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6 — B&W elderly man profile -->
+<div class="swiper-slide" style="background-image: url('images/slide6.png')">
+    <div class="slide-overlay">
+        <div class="slide-content">
+            <span class="slide-tag">Faces of Balochistan</span>
+            <h2>Stories of a Lifetime</h2>
+            <p>Weathered by time, rich in wisdom — the elders who carry Baloch heritage forward</p>
+            <a href="Gallery.html" class="slide-btn">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+            </div><!-- /swiper-wrapper -->
+
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination dots -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <a href="#" onclick="window.scrollBy({top: window.innerHeight, behavior:'smooth'}); return false;">
+    <i class="fas fa-chevron-down"></i>
+</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         STATS SECTION
+    ═══════════════════════════════════════ -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+                <i class="fas fa-camera"></i>
+                <h3>500+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <h3>300+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-award"></i>
+                <h3>50+</h3>
+                <p>Awards Won</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-clock"></i>
+                <h3>5+</h3>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         GALLERY CATEGORIES SECTION
+    ═══════════════════════════════════════ -->
+    <section class="gallery-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Photography Categories</h2>
+            <p>Explore our diverse portfolio of professional photography</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card" style="background-image: url('images/balochistan17.png')" data-category="nature" data-aos="fade-up">
+                <div class="card-overlay">
+                    <i class="fas fa-leaf card-icon"></i>
+                    <h3>Nature</h3>
+                    <p>Breathtaking landscapes and natural beauty</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/portrait13.jpg')" data-category="portrait" data-aos="fade-up" data-aos-delay="50">
+                <div class="card-overlay">
+                    <i class="fas fa-user-circle card-icon"></i>
+                    <h3>Portrait</h3>
+                    <p>Professional portrait photography</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/balochistan13.jpg')" data-category="people" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-overlay">
+                    <i class="fas fa-users card-icon"></i>
+                    <h3>People</h3>
+                    <p>Candid moments and lifestyle photography</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/portrait8.jpg')" data-category="architecture" data-aos="fade-up" data-aos-delay="150">
+                <div class="card-overlay">
+                    <i class="fas fa-building card-icon"></i>
+                    <h3>Architecture</h3>
+                    <p>Stunning architectural photography</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/balochistan1.jpg')" data-category="animals" data-aos="fade-up">
+                <div class="card-overlay">
+                    <i class="fas fa-paw card-icon"></i>
+                    <h3>Animals</h3>
+                    <p>Wildlife and pet photography</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/portrait30.jpg')" data-category="sports" data-aos="fade-up" data-aos-delay="50">
+                <div class="card-overlay">
+                    <i class="fas fa-running card-icon"></i>
+                    <h3>Sports</h3>
+                    <p>Action-packed sports photography</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/nature5.jpg')" data-category="food" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-overlay">
+                    <i class="fas fa-utensils card-icon"></i>
+                    <h3>Food</h3>
+                    <p>Delicious food photography</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/balochistan4.jpg')" data-category="travel" data-aos="fade-up" data-aos-delay="150">
+                <div class="card-overlay">
+                    <i class="fas fa-plane card-icon"></i>
+                    <h3>Travel</h3>
+                    <p>Adventures around the world</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/nature8.jpg')" data-category="travel" data-aos="fade-up">
+                <div class="card-overlay">
+                    <i class="fas fa-mountain card-icon"></i>
+                    <h3>Landscapes</h3>
+                    <p>Majestic scenic views</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/nature12.png')" data-category="travel" data-aos="fade-up" data-aos-delay="50">
+                <div class="card-overlay">
+                    <i class="fas fa-map-marked-alt card-icon"></i>
+                    <h3>Exploration</h3>
+                    <p>Discovering new places</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/portrait17.jpg')" data-category="travel" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-overlay">
+                    <i class="fas fa-globe card-icon"></i>
+                    <h3>Cultural</h3>
+                    <p>Rich cultural experiences</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="card" style="background-image: url('images/balochistan12.png')" data-category="travel" data-aos="fade-up" data-aos-delay="150">
+                <div class="card-overlay">
+                    <i class="fas fa-camera-retro card-icon"></i>
+                    <h3>Stories</h3>
+                    <p>Visual storytelling through photos</p>
+                    <a href="Gallery.html" class="card-btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS SECTION
+    ═══════════════════════════════════════ -->
+    <section class="testimonials-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by hundreds of satisfied customers</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Outstanding photography service! Kamanchar captured our special moments perfectly."</p>
+                <h4>— Himad Khan</h4>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Professional, creative, and dedicated. Highly recommend their services!"</p>
+                <h4>— Sir Mukhtar Baloch</h4>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Amazing quality and attention to detail. Best photographer in Balochistan!"</p>
+                <h4>— Mehlab Maqsood</h4>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	
+	
+
+<! ------ Footer Section -------->
+
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <h2>K<span>amanchar</span></h2>
+                    <p>Thank you for visiting our platform, where creativity meets quality. We believe in delivering premium content, powerful visuals, and unforgettable experiences.</p>
+                </div>
+                <div class="footer-social">
+                  <a href="https://wa.me/923301561289?text=Hi!%20I%20was%20just%20exploring%20the%20Kamanchar%20collection%20and%20I%E2%80%99m%20really%20impressed%20with%20the%20quality%20and%20style.%20I%E2%80%99d%20love%20to%20get%20some%20details%20and%20place%20an%20order!%20%E2%9C%A8" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+						<a href="https://www.youtube.com/@kamancharbaloch2745" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/kamancharbaluch" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/kamanchar.baloch" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul class="footer-nav">
+    <li><a href="index.html"    class="footer-nav-link">Home</a></li>
+    <li><a href="Gallery.html"  class="footer-nav-link">Gallery</a></li>
+    <li><a href="Services.html" class="footer-nav-link">Services</a></li>
+    <li><a href="About.html"    class="footer-nav-link">About</a></li>
+    <li><a href="Contact.html"  class="footer-nav-link">Contact</a></li>
+</ul>            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Faqeer Colony, Gwadar, Street no: 203,</p>
+                    <p><i class="fas fa-phone"></i> <a href="https://wa.me/923301561289?text=Hi!%20I%20found%20your%20contact%20from%20the%20website." target="_blank">0330 1561289</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mehrwanbaloch9t9@gmail.com" 
+   onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=mehrwanbaloch9t9@gmail.com','_blank')">
+   mehrwanbaloch9t9@gmail.com
+</a></p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Mehrwan_Baloch912 | Designed with <i class="fas fa-heart"></i> in Balochistan</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Your main script -->
+    <script src="script.js"></script>
+
+    <!-- Init AOS -->
+    <script>AOS.init({ once: true, duration: 800 });</script>
+
+    <!-- Hero Swiper Initialisation -->
+    <script>
+    if (document.querySelector(".heroSwiper")) {
+        var heroSwiper = new Swiper(".heroSwiper", {
+            loop: true,
+            speed: 900,
+            effect: "fade",
+            fadeEffect: { crossFade: true },
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            on: {
+                slideChangeTransitionStart: function () {
+                    const activeSlide = this.slides[this.activeIndex];
+                    const content = activeSlide.querySelector('.slide-content');
+                    if (content) {
+                        content.style.animation = 'none';
+                        content.offsetHeight;
+                        content.style.animation = 'slideIn 0.9s ease-out both';
+                    }
+                }
+            }
+        });
+    }
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Slide background zoom setup -->
+<script>
+    document.querySelectorAll('.heroSwiper .swiper-slide').forEach(function(slide) {
+        var bg = slide.style.backgroundImage;
+        if (bg) {
+            var bgDiv = document.createElement('div');
+            bgDiv.className = 'slide-bg';
+            bgDiv.style.backgroundImage = bg;
+            slide.style.backgroundImage = '';
+            slide.insertBefore(bgDiv, slide.firstChild);
+        }
+    });
+</script>
+
+</body>
+</html>
+

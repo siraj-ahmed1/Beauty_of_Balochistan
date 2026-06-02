@@ -1,0 +1,286 @@
+/* ═══════════════════════════════════════════════════════════════
+   fonts.css — Kamanchar Photography
+   Global typography assignments for ALL pages.
+
+   Font Stack:
+   ▸ 'Cinzel'              → Brand logo, navbar title
+   ▸ 'Cormorant Garamond'  → All headings h1 – h3
+   ▸ 'DM Sans'             → Body, nav, paragraphs, forms, buttons
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Base: everything defaults to DM Sans ─────────────────────── */
+*,
+body,
+p,
+li,
+span,
+label,
+input,
+textarea,
+select,
+button,
+a,
+td,
+th {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.01em;
+}
+
+/* ── Brand / Logo — Cinzel ────────────────────────────────────── */
+.nav-brand h1,
+.nav-brand h1 span,
+.footer-brand h2,
+.footer-brand h2 span {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+/* ── All page headings — Cormorant Garamond ───────────────────── */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+}
+
+/* ── Hero overlay headings (all pages) ───────────────────────── */
+.hero-overlay h1,
+.gallery-hero   .hero-overlay h1,
+.about-hero     .hero-overlay h1,
+.services-hero  .hero-overlay h1,
+.contact-hero   .hero-overlay h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    letter-spacing: 0.04em;
+}
+
+/* ── Section headers (h2 "Amazing Shots", "Why Choose Us", etc.) */
+.section-header h2,
+.story-section  h2,
+.features-section h2,
+.team-section   h2,
+.pricing-section > h2,
+.services-section h2,
+.services-container h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: 0.03em;
+}
+
+/* Coloured span inside headings */
+.section-header h2 span,
+.story-section  h2 span,
+.form-wrapper   h2 span {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+}
+
+/* ── Section sub-paragraphs ───────────────────────────────────── */
+.section-header p,
+.story-section .lead {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+}
+
+/* ── Navbar links ─────────────────────────────────────────────── */
+.nav-link,
+.navbar-nav li a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* ── Footer nav links ─────────────────────────────────────────── */
+.footer-nav-link,
+.footer-nav li a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.footer-col h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+}
+
+/* ── About page ───────────────────────────────────────────────── */
+.story-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.story-points .point p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+.feature-card h3,
+.team-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.team-info .role {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.team-info .bio,
+.feature-card p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+}
+
+.cta-section h2,
+.services-cta h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* ── Services page ────────────────────────────────────────────── */
+.service-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.service-card p,
+.service-features li {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.service-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.pricing-card h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.pricing-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.pricing-features li {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Contact page ─────────────────────────────────────────────── */
+.info-card h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+}
+
+.info-card p,
+.info-card a {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.form-wrapper h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.02em;
+}
+
+.form-group label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+/* ── Gallery page ─────────────────────────────────────────────── */
+.filter-btn,
+.filter-btn a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+}
+
+.load-more-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* ── Breadcrumb ───────────────────────────────────────────────── */
+.breadcrumb,
+.breadcrumb a,
+.breadcrumb span {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+}
+
+/* ── Footer bottom ────────────────────────────────────────────── */
+.footer-bottom p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.03em;
+}
+
+/* ── Newsletter form ──────────────────────────────────────────── */
+.newsletter-form input,
+.newsletter-form button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Responsive font scaling ──────────────────────────────────── */
+@media (max-width: 768px) {
+    .hero-overlay h1,
+    .gallery-hero   .hero-overlay h1,
+    .about-hero     .hero-overlay h1,
+    .services-hero  .hero-overlay h1,
+    .contact-hero   .hero-overlay h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .section-header h2,
+    .story-section  h2 {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+}
