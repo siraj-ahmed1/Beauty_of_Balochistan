@@ -1,0 +1,601 @@
+
+
+/* About Page Specific Styles */
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    height: 72vh;
+    min-height: 480px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('../images/balochistan13.jpg') center/cover no-repeat;
+					background-size:cover;
+	background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	overflow:hidden;
+}
+
+/* Zooming Main Pic Property */
+.about-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../images/balochistan13.jpg') center/cover no-repeat;
+    transform: scale(1.05);
+    transition: transform 8s ease-out;
+    z-index: 0;
+
+}
+
+.about-hero:hover::before {
+    transform: scale(1);
+}
+
+.about-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    z-index: 1;
+}
+
+.about-hero .hero-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+/*Zooming Property Finished */ 
+
+
+
+
+.hero-overlay {
+    color: white;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-overlay h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.breadcrumb a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #3498db;
+}
+
+.breadcrumb span {
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+/* Story Section */
+.story-section {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.story-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.story-text h2 span {
+    color: #3498db;
+    border-bottom: 4px solid #f39c12;
+    padding-bottom: 5px;
+}
+
+.story-text .lead {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.story-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.point {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.point i {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-top: 3px;
+}
+
+.point p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.5rem;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.cta-btn:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.story-image {
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.image-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #3498db;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+.image-badge i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.image-badge span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Features Section */
+.features-section {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+}
+
+.features-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #3498db, #e74c3c);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    font-size: 2rem;
+    transition: all 0.4s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    transform: rotateY(360deg);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.feature-number {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(52, 152, 219, 0.1);
+}
+
+/* Team Section */
+.team-section {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.team-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.team-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+	
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.team-social a {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.team-card:hover .team-social a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.team-social a:nth-child(1) { transition-delay: 0.1s; }
+.team-social a:nth-child(2) { transition-delay: 0.2s; }
+.team-social a:nth-child(3) { transition-delay: 0.3s; }
+.team-social a:nth-child(4) { transition-delay: 0.4s; }
+
+.team-social a:hover {
+    background: #e74c3c;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.team-info {
+    padding: 2rem;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.team-info .role {
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.team-info .bio {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('../images/portrait16.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+	text-align:center;
+}
+
+.btn-primary {
+    background: white;
+    color: #667eea;
+}
+
+.btn-primary:hover {
+    background: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+/* Cta Buttons */
+/* ═══════════════════════════════════════════════════
+   FIX — CTA buttons not centered on mobile
+   ═══════════════════════════════════════════════════ */
+
+/* Make the content wrapper itself a centered flex column */
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Ensure the buttons container is centered and full-width */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Mobile: stack + center each button */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 85%;
+        max-width: 300px;
+        margin: 0 auto;      /* <-- this is the key centering fix */
+        text-align: center;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 55vh;
+        min-height: 360px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .story-section,
+    .features-section,
+    .team-section {
+        padding: 3rem 1rem;
+    }
+
+    .story-text h2 {
+        font-size: 2rem;
+    }
+
+    .features-container,
+    .team-container {
+        gap: 2rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-overlay h1 {
+        font-size: 1.6rem;
+    }
+
+    .story-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+}
